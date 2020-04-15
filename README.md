@@ -2,6 +2,7 @@
 Fakultet elektrotehnike Tuzla - Arhitektura racunara
 
 Zadatak 1
+
 Dat je proizvoljan niz od 10 32-bitnih brojeva. Za svaki element niza primijeniti sljedece
 pravilo:
 – ako je broj paran podijeliti mu vrijednost sa 2, u suprotnom pomnoziti sa 2
