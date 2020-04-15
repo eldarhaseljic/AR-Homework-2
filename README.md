@@ -1,12 +1,24 @@
 # AR-Homework-2
 Fakultet elektrotehnike Tuzla - Arhitektura racunara
+Arhitektura računara
+April, 2018.
 
+ZADAĆA
+1 Zadatak Sadržaj
+2 Zadatak
+3 Zadatak
+4 Zadatak
+5 Zadatak
+6 Zadatak
+7 Zadatak
+8 Zadatak
+9 Zadatak
 Zadatak 1
-
 Dat je proizvoljan niz od 10 32-bitnih brojeva. Za svaki element niza primijeniti sljedece
 pravilo:
-– ako je broj paran podijeliti mu vrijednost sa 2, u suprotnom pomnoziti sa 2
-– na lokaciju niza “rez” smjestiti apsolutnu vrijednost dobivenog broja
+
+ako je broj paran podijeliti mu vrijednost sa 2, u suprotnom pomnoziti sa 2
+na lokaciju niza “rez” smjestiti apsolutnu vrijednost dobivenog broja
 Realizovati bez koristenja funkcija, odnosno koristeci uslove i petlje.
 Zadatak 2
 Dat je dio .data sekcije MIPS programa:
@@ -34,12 +46,13 @@ rezultat: .word 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 .globl main
 main:
 la $t0, niz
-la $t1, rezultataddi $t2, $0, 0
+la $t1, rezultat
+addi $t2, $0, 0
 j uslov
 tijelo:
 sll $t3, $t2, 2
-add $t4, $t3, $t0
-add $t5, $t3, $t1
+add $t4, $t3, $t
+add $t5, $t3, $t
 lw $a0, 0($t4)
 jal f_rezultat
 sw $v0, 0($t5)
@@ -68,7 +81,9 @@ Data je funkcija f(a, b, c, d)=(a+b)-(c+d)- 6, x je cijeli broj. Izračunati vri
 elemenata niza “brojevi” i rezultate smještati u niz “rezultat”.
 Zadatak 7
 Napisati MIPS program koji za date karaktere (ASCII kodove) u nizu kodovi
-provjerava da li isti postoje u stringu “tekst” i rezultat upisuje u niz “test”.Provjeru postojanja znaka u stringu realizovati kao proceduru koja bi u C-u imala
+provjerava da li isti postoje u stringu “tekst” i rezultat upisuje u niz “test”.
+
+Provjeru postojanja znaka u stringu realizovati kao proceduru koja bi u C-u imala
 deklaraciju:
 int postoji_znak(char *s, char c);
 Funkcija vraća 0 ako znak c ne postoji u stringu a 1 ako postoji. String zadan
@@ -100,4 +115,3 @@ return a + test(a-1, b-3);
 return a – b + test(a-2, b-1);
 }
 }
- 
